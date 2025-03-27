@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Count</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>!Trình Đếm Ký Tự!</h2>
+        <textarea id="inputText" placeholder="Nhập văn bản..." cols="30" rows="10" onkeyup="countingCharacters()"></textarea>
+        <p>Số ký tự còn lại: <span class="counter">200</span></p>
+        <p>Số từ: <span class="word-counter">0</span></p>
+        <progress id="progressBar" value="0" max="200"></progress>
+        <button class="mic-button" onclick="startSpeechRecognition()">🎤 Nhập bằng giọng nói</button>
+        <p id="warningMessage" class="warning" style="display: none;">Bạn đã đạt giới hạn ký tự!</p>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
